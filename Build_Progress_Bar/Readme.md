@@ -1,6 +1,6 @@
 
 # Build Progress Bar Sample
-Display a Progress Bar inside a Toolwindow in Visual Studio.
+Display a Progress Bar inside a Tool window in Visual Studio.
 
 * Technologies: Visual Studio 2017 SDK
 * Topics: Visual Studio Shell, VSX
