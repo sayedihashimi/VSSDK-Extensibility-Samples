@@ -1,0 +1,49 @@
+{
+  "author": "Sayed Ibrahim Hashimi",
+  "classifications": ["VS2017 Extensibility"],
+  "description": "Demonstrate how to implement the Line Transformation API in Visual Studio.",
+  "name": "VS2017 Caret Fish Eye",
+  "defaultName": "SccProvider",
+  "identity": "LigerShark.Extensibility.BasicSccProvider.CSharp",
+  "groupIdentity": "LigerShark.Extensibility.BasicSccProvider",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "extcaret",
+  "sourceName": "CaretFishEye",
+  "guids": [
+    // Project ID: - Extensibility.TemplatePack\Extensibility.TemplatePack.csproj
+    " {07D7F295-F0CD-462B-AAB3-339D60A2772B}",
+    // vsixmanifest ID - Extensibility.TemplatePack\source.extension.vsixmanifest
+    "37A49EF4-8C88-4010-920C-4CCC18210E1F"
+  ],
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "..\\packages\\"
+      },
+      "replaces": "packages\\"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "CaretFishEye.csproj"
+    }
+  ],
+  "sources": [
+    {
+      "exclude": [
+        "**/*.sln",
+        "**/.vs/**",
+        "**/packages/**",
+        "**/*.user",
+        "**/bin/**",
+        "**/obj/**",
+        "**/.template.config**"
+      ]
+    }
+  ]
+}

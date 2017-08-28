@@ -1,0 +1,49 @@
+{
+  "author": "Sayed Ibrahim Hashimi",
+  "classifications": ["VS2017 Extensibility"],
+  "description": "Display a Progress Bar inside a Tool window in Visual Studio.",
+  "name": "VS2017 Build Progress Bar",
+  "defaultName": "SccProvider",
+  "identity": "LigerShark.Extensibility.BuildProgressBar.CSharp",
+  "groupIdentity": "LigerShark.Extensibility.BuildProgressBar",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "extscc",
+  "sourceName": "BuildProgressBar",
+  "guids": [
+    // Project ID: - C#\BuildProgressBar\BuildProgressBar.csproj
+    "{99F961A3-47A3-4C13-B206-B2437D8F199A}",
+    // vsixmanifest ID - C#\BuildProgressBar\source.extension.vsixmanifest
+    "5155577e-bdb8-40af-ac6b-fd16439ebddb"
+  ],
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "..\\packages\\"
+      },
+      "replaces": "packages\\"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "BuildProgressBar.csproj"
+    }
+  ],
+  "sources": [
+    {
+      "exclude": [
+        "**/*.sln",
+        "**/.vs/**",
+        "**/packages/**",
+        "**/*.user",
+        "**/bin/**",
+        "**/obj/**",
+        "**/.template.config**"
+      ]
+    }
+  ]
+}

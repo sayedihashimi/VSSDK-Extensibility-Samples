@@ -1,0 +1,49 @@
+{
+  "author": "Sayed Ibrahim Hashimi",
+  "classifications": ["VS2017 Extensibility"],
+  "description": "Adjust the appearance of Completion Tooltips in Visual Studio.",
+  "name": "VS2017 Customize Tooltip",
+  "defaultName": "CustomizeTooltip",
+  "identity": "LigerShark.Extensibility.Tooltip.CSharp",
+  "groupIdentity": "LigerShark.Extensibility.Tooltip",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "extscc",
+  "sourceName": "CompletionTooltipCustomization",
+  "guids": [
+    // Project ID: - C#\CompletionTooltipCustomization.csproj
+    " {9368384A-E9A4-47D5-89B5-EC1535D96EB6}",
+    // vsixmanifest ID - C#\source.extension.vsixmanifest
+    "CompletionTooltipCustomization"
+  ],
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "..\\packages\\"
+      },
+      "replaces": "packages\\"s
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "CompletionTooltipCustomizationnto.csproj"
+    }
+  ],
+  "sources": [
+    {
+      "exclude": [
+        "**/*.sln",
+        "**/.vs/**",
+        "**/packages/**",
+        "**/*.user",
+        "**/bin/**",
+        "**/obj/**",
+        "**/.template.config**"
+      ]
+    }
+  ]
+}
