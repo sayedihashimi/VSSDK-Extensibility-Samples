@@ -1,6 +1,8 @@
 {
   "author": "Sayed Ibrahim Hashimi",
-  "classifications": ["VS2017 Extensibility"],
+  "classifications": [
+    "VS2017 Extensibility"
+  ],
   "description": "Provides the basic requirements to implement a Source Control Provider in Visual Studio 2017.",
   "name": "VS2017 Basic SCC Provider",
   "defaultName": "SccProvider",
@@ -11,19 +13,13 @@
     "type": "project"
   },
   "shortName": "extscc",
-  "sourceName": "SccProvider",
+  "sourceName": "BasicSccProvider",
   "guids": [
-    // Project ID
     "{9A40F019-E5A2-4CF3-B706-2D39F29C0672}",
-    // vsixmanifest ID
     "DB69760D-FBA9-4BA5-88AE-FB164CE78C3C",
-    // package id
     "ADC98052-2000-41D1-A6C3-704E6C1A3DE2",
-    // from SccProviderOptions.cs
     "ADC98052-111E-4a5b-9834-076CB319ED59",
-    // from SccProviderService.cs
     "ADC98052-1000-41D1-A6C3-704E6C1A3DE2",
-    // SccProviderToolWindow.cs
     "ADC98052-bbbb-42f2-8085-723ca3712763"
   ],
   "symbols": {

@@ -1,6 +1,8 @@
 {
   "author": "Sayed Ibrahim Hashimi",
-  "classifications": ["VS2017 Extensibility"],
+  "classifications": [
+    "VS2017 Extensibility"
+  ],
   "description": "Add a toolbar to Visual Studio that has four different kinds of dropdown combo boxes.",
   "name": "VS2017 Combo Box",
   "defaultName": "ComboBox",
@@ -13,9 +15,7 @@
   "shortName": "extcombobox",
   "sourceName": "Reference.ComboBox",
   "guids": [
-    // Project ID: - C#\Reference.ComboBox.csproj
     " {D8407669-D43D-47E9-8A5F-B81DC0606A89}",
-    // vsixmanifest ID - C#\source.extension.vsixmanifest
     "40d9f297-25fb-4264-99ed-7785f8331c94"
   ],
   "symbols": {

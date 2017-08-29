@@ -1,7 +1,8 @@
 {
-  // TODO: Add replacement for Microsoft.Samples.VisualStudio.CodeSweep
   "author": "Sayed Ibrahim Hashimi",
-  "classifications": ["VS2017 Extensibility"],
+  "classifications": [
+    "VS2017 Extensibility"
+  ],
   "description": "Sweep a solution looking for any words that match search terms in an XML Schema. Display any matches on the Task List in Visual Studio.",
   "name": "VS2017 Code Sweep",
   "defaultName": "CodeSweep",
@@ -14,15 +15,10 @@
   "shortName": "extcodesweep",
   "sourceName": "CodeSweep",
   "guids": [
-    // Project ID: - C#\BuildTask\BuildTask.csproj
     "{9330DAAF-0FEE-4372-B768-964BAB47A659}  ",
-    // Project ID: - C#\Scanner\Scanner.csproj
     "{9844C444-DB5C-4AC9-902C-282A7F970E8B}  ",
-    // Project ID: - C#\Utilities\Utilities.csproj
     "{34D56C68-85AC-41E1-804A-BD3484A53448}  ",
-    // Project ID: - C#\VsPackage\VsPackage.csproj
     " {FC3F86D1-7297-4B2D-B692-2E97E4DDB146}   ",
-    // vsixmanifest ID - C#\VsPackage\source.extension.vsixmanifest
     "4c04f4d5-57ad-4d92-a80c-4785d7c87061"
   ],
   "symbols": {
@@ -30,9 +26,9 @@
       "type": "generated",
       "generator": "constant",
       "parameters": {
-        "value": "..\\..\\packages\\"
+        "value": "\"..\\..\\packages\\"
       },
-      "replaces": "packages\\"
+      "replaces": "\"packages\\"
     }
   },
   "primaryOutputs": [

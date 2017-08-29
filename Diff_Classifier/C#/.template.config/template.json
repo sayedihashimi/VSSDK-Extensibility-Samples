@@ -1,7 +1,8 @@
 {
-  // TODO: DiffClassifier.csproj is missing the copyright
   "author": "Sayed Ibrahim Hashimi",
-  "classifications": ["VS2017 Extensibility"],
+  "classifications": [
+    "VS2017 Extensibility"
+  ],
   "description": "Provides a classifier with color highlighting that affects files with .diff or .patch extensions.",
   "name": "VS2017 Diff Classifier",
   "defaultName": "DiffClassifier",
@@ -14,9 +15,7 @@
   "shortName": "extcaret",
   "sourceName": "DiffClassifier",
   "guids": [
-    // Project ID: - C#\DiffClassifier.csproj
     " {E7EFCC71-C81A-4D8B-B0B8-037441A5FFA3}",
-    // vsixmanifest ID - C#\source.extension.vsixmanifest
     "90af857e-8138-4193-be15-32c87793ade3"
   ],
   "symbols": {

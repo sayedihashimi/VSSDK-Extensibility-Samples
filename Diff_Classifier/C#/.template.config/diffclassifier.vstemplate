@@ -18,7 +18,7 @@
     <CustomParameters>
       <CustomParameter Name="$language$" Value="CSharp" />
       <CustomParameter Name="$uistyle$" Value="none" />
-      <CustomParameter Name="$groupid$" Value="LigerShark.Extensibility.CaretFishEye" />
+      <CustomParameter Name="$groupid$" Value="LigerShark.Extensibility.DiffClassifier" />
       <CustomParameter Name="SideWaffleNewProjNode" Value="CSharp\Extensibility\Samples" />
     </CustomParameters>
   </TemplateContent>
