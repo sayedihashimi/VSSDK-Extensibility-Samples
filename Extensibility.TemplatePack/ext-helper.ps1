@@ -115,7 +115,7 @@ function Load-NewtonsoftJson{
 function UpdateVsTemplateFiles{
     [cmdletbinding()]
     param(
-        [string]$sourceRoot = (Join-path $pwd '..\')
+        [string]$sourceRoot = (Join-path $PSScriptRoot '..\')
     )
     process{
         # find each template.json file
@@ -124,7 +124,7 @@ function UpdateVsTemplateFiles{
         try{
             foreach($tf in $templateFiles ){
                 $dir = split-path -path $tf -Parent
-                [string[]]$vstemplate = get-childitem -path $dir *.vstemplate
+                [string[]]$vstemplate = (get-childitem -path $dir *.vstemplate|select-object -ExpandProperty fullname)
                 if($vstemplate -ne $null -and ($vstemplate.count -eq 1)){
                     # $tempxml=([xml]get-content -path $vstemplate[0])
                     $tempxml = ([xml](get-content $vstemplate))
@@ -138,13 +138,16 @@ function UpdateVsTemplateFiles{
 
                     $tempxml.VSTemplate.TemplateContent.CustomParameters.CustomParameter[2] = $groupId
                     $tempxml.VSTemplate.TemplateData.TemplateID = $identity
+                    $tempxml.VSTemplate.TemplateData.DefaultName = $tempjson.defaultName.value
+                    $tempxml.Save($vstemplate)
                 }
                 else{
-                    "Unable to process $dir" | Write-Warning
+                    "Unable to process dir:[$dir], vstemplate: [$vstemplate]" | Write-Warning
                 }
             }
         }
         catch{
+            "Unable to process tf:[$tf] vstemplate:[$vstemplate]" | Write-Warning
             Write-Warning $_
         }
         Set-Location $dir
@@ -309,6 +312,6 @@ function LoadFileReplacer{
 Load-NewtonsoftJson
 LoadFileReplacer
 GetGuidsToReplace
-
+UpdateVsTemplateFiles
 
 
