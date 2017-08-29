@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>VS2017 Code Sweep</Name>
+    <Name>Code Sweep</Name>
     <Description>Sweep a solution looking for any words that match search terms in an XML Schema. Display any matches on the Task List in Visual Studio.</Description>
     <TemplateID>LigerShark.Extensibility.CodeSweep.CSharp</TemplateID>
     <DefaultName>CodeSweep</DefaultName>

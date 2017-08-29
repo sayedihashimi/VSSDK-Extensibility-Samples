@@ -2,7 +2,7 @@
   "author": "Sayed Ibrahim Hashimi",
   "classifications": ["VS2017 Extensibility"],
   "description": "Provides a multi-instance toolwindow with a toolbar in Visual Studio.",
-  "name": "VS2017  multi-instance toolwindow",
+  "name": "VS2017  Multi-instance toolwindow",
   "defaultName": "ToolWindow",
   "identity": "LigerShark.Extensibility.ToolWindow.CSharp",
   "groupIdentity": "LigerShark.Extensibility.ToolWindow",
@@ -10,7 +10,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extscc",
+  "shortName": "exttoolwindow",
   "sourceName": "CommandTargetRGB",
   "guids": [
     // Project ID: - C#\Reference.ComboBox.csproj

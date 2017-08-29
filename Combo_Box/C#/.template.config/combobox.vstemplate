@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>VS2017 Combo Box</Name>
+    <Name>Combo Box</Name>
     <Description>Add a toolbar to Visual Studio that has four different kinds of dropdown combo boxes.</Description>
     <TemplateID>LigerShark.Extensibility.ComboBox.CSharp</TemplateID>
     <DefaultName>ComboBox</DefaultName>

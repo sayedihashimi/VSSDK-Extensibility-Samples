@@ -10,7 +10,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extscc",
+  "shortName": "exttooltip",
   "sourceName": "CompletionTooltipCustomization",
   "guids": [
     // Project ID: - C#\CompletionTooltipCustomization.csproj

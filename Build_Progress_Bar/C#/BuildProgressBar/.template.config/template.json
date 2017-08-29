@@ -3,14 +3,14 @@
   "classifications": ["VS2017 Extensibility"],
   "description": "Display a Progress Bar inside a Tool window in Visual Studio.",
   "name": "VS2017 Build Progress Bar",
-  "defaultName": "SccProvider",
+  "defaultName": "BuildProgressBar",
   "identity": "LigerShark.Extensibility.BuildProgressBar.CSharp",
   "groupIdentity": "LigerShark.Extensibility.BuildProgressBar",
   "tags": {
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extscc",
+  "shortName": "extbuildprogress",
   "sourceName": "BuildProgressBar",
   "guids": [
     // Project ID: - C#\BuildProgressBar\BuildProgressBar.csproj

@@ -10,7 +10,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extcaret",
+  "shortName": "extcombobox",
   "sourceName": "Reference.ComboBox",
   "guids": [
     // Project ID: - C#\Reference.ComboBox.csproj

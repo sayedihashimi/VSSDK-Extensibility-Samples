@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>VS2017 Basic SCC Provider</Name>
+    <Name>Basic SCC Provider</Name>
     <Description>Provides the basic requirements to implement a Source Control Provider in Visual Studio 2017.</Description>
     <TemplateID>LigerShark.Extensibility.SccProvider.CSharp</TemplateID>
     <DefaultName>SccProvider</DefaultName>

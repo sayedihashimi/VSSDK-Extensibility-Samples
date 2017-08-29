@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>VS2017 Caret Fish Eye</Name>
+    <Name>Caret Fish Eye</Name>
     <Description>Demonstrate how to implement the Line Transformation API in Visual Studio.</Description>
     <TemplateID>LigerShark.Extensibility.SccProvider.CSharp</TemplateID>
     <DefaultName>SccProvider</DefaultName>

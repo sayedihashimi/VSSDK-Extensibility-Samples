@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>VS2017  multi-instance toolwindow</Name>
+    <Name> Multi-instance toolwindow</Name>
     <Description>Provides a multi-instance toolwindow with a toolbar in Visual Studio.</Description>
     <TemplateID>LigerShark.Extensibility.ToolWindow.CSharp</TemplateID>
     <DefaultName>ToolWindow</DefaultName>
