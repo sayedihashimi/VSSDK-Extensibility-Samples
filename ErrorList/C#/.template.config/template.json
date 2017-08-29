@@ -1,0 +1,49 @@
+{
+  "author": "Sayed Ibrahim Hashimi",
+  "classifications": [
+    "VS2017 Extensibility"
+  ],
+  "description": "A sample of a VSIX that generates errors in error list when you make spelling errors in the editor.",
+  "name": "VS2017 Error List",
+  "defaultName": "ErrorList",
+  "identity": "LigerShark.Extensibility.ErrorList.CSharp",
+  "groupIdentity": "LigerShark.Extensibility.ErrorList",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "exterrorlist",
+  "sourceName": "SpellChecker",
+  "guids": [
+    "{99F961A3-47A3-4C13-B206-B2437D8F199A}",
+    "5155577e-bdb8-40af-ac6b-fd16439ebddb"
+  ],
+  "primaryOutputs": [
+    {
+      "path": "SpellChecker.csproj"
+    }
+  ],
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "$(SolutionDir)\\packages\\"
+      },
+      "replaces": "packages\\"
+    }
+  },
+  "sources": [
+    {
+      "exclude": [
+        "**/*.sln",
+        "**/.vs/**",
+        "**/packages/**",
+        "**/*.user",
+        "**/bin/**",
+        "**/obj/**",
+        "**/.template.config**"
+      ]
+    }
+  ]
+}
