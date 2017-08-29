@@ -128,6 +128,8 @@ function UpdateVsTemplateFiles{
                 $tempjson = ([Newtonsoft.Json.Linq.JObject]::Parse([System.IO.File]::ReadAllText($tf)))
                 $tempjson.identity.value='LigerShark.Extensibility.{0}.CSharp' -f ($tempjson.defaultName.value)
                 $tempjson.groupIdentity.Value='LigerShark.Extensibility.{0}' -f ($tempjson.defaultName.value)
+                $tempjson.shortName.Value = ('ext{0}' -f $tempjson.defaultName.value.ToLower())
+
                 $tempjson.ToString() | Out-File -FilePath $tf -Encoding ascii
 
                 [string[]]$vstemplate = (get-childitem -path $dir *.vstemplate|select-object -ExpandProperty fullname)
@@ -171,7 +173,7 @@ function GetGuidsToReplace{
         [string]$guidPattern = '[{(]?[0-9A-F]{8}[-]?([0-9A-F]{4}[-]?){3}[0-9A-F]{12}[)}]?',
 
         [Parameter(Position=2)]
-        [string[]]$pathToExclude = ('packages','bin','obj')
+        [string[]]$pathToExclude = ('packages','bin','obj','*.png','template.json','*.sln')
     )
     process{
         # get projectid from all project files, $xml.Project.PropertyGroup.ProjectGuid
@@ -181,10 +183,11 @@ function GetGuidsToReplace{
         foreach($pf in $projectfiles){
             if(test-path -Path $pf -PathType Leaf){
                 $pxml = [xml](Get-Content -Path $pf)
-                $pguid = $pxml.Project.PropertyGroup.ProjectGuid
+                [string]$pguid = $pxml.Project.PropertyGroup.ProjectGuid
                 if(-not ([string]::IsNullOrWhiteSpace($pguid))) {
                     $relpf = (InternalGet-RelativePath -fromPath $folderpath -toPath $pf)
-                    "// Project ID: - $relpf `r`n""$pguid""," | Write-Output
+                    $idtrimmed = $pguid.Trim()
+                    "// Project ID: - $relpf `r`n""$idtrimmed""," | Write-Output
                 }
             }
         }
@@ -202,7 +205,7 @@ function GetGuidsToReplace{
         }
 
         # generic guid search across files
-        Get-ChildItemsExclude -path $folderpath -exclude $pathToExclude | Select-String -Pattern $guidPattern | Select-Object -Unique
+        Get-ChildItem -path $folderpath -exclude $pathToExclude -Recurse -File | Select-String -Pattern $guidPattern | Select-Object -Unique
     }
 }
 

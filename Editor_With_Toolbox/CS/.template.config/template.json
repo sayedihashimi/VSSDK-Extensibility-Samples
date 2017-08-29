@@ -1,0 +1,53 @@
+{
+  // TODO: Add a replacement for EditorwithToolbox.Microsoft Corporation.
+  // TODO: Do the guids in EditorWithToolbox.vsdir need to be updated?
+  "author": "Sayed Ibrahim Hashimi",
+  "classifications": [
+    "VS2017 Extensibility"
+  ],
+  "description": "Modify the Editor to support a custom file type and construct toolbox items for the document in Visual Studio.",
+  "name": "VS2017 Editor with Toolbox",
+  "defaultName": "EditorWithToolbox",
+  "identity": "LigerShark.Extensibility.EditorWithToolbox.CSharp",
+  "groupIdentity": "LigerShark.Extensibility.EditorWithToolbox",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "exteditorwithtoolbox",
+  "sourceName": "EditorWithToolbox",
+  "guids": [
+    // Project ID: - CS\EditorWithToolbox.csproj
+    " {A96C6F84-A591-4AA4-92AD-F1FA4955C835}",
+    // vsixmanifest ID - CS\source.extension.vsixmanifest
+    "EditorwithToolbox.Microsoft Corporation.B8BA92FE-2BE2-4EC3-A913-1A2EC3277756"
+  ],
+  "primaryOutputs": [
+    {
+      "path": "EditorWithToolbox.csproj"
+    }
+  ],
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "$(SolutionDir)\\packages\\"
+      },
+      "replaces": "packages\\"
+    }
+  },
+  "sources": [
+    {
+      "exclude": [
+        "**/*.sln",
+        "**/.vs/**",
+        "**/packages/**",
+        "**/*.user",
+        "**/bin/**",
+        "**/obj/**",
+        "**/.template.config**"
+      ]
+    }
+  ]
+}

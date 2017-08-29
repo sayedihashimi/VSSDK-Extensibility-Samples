@@ -27,7 +27,7 @@
       "type": "generated",
       "generator": "constant",
       "parameters": {
-        "value": "..\\packages\\"
+        "value": "$(SolutionDir)\\packages\\"
       },
       "replaces": "packages\\"
     }

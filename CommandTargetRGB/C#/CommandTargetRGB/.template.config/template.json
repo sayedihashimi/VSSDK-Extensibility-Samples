@@ -23,6 +23,16 @@
       "path": "CommandTargetRGB.csproj"
     }
   ],
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "$(SolutionDir)\\packages\\"
+      },
+      "replaces": "..\\packages\\"
+    }
+  },
   "sources": [
     {
       "exclude": [
