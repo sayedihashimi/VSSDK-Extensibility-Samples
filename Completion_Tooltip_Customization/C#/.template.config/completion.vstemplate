@@ -1,12 +1,10 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>VS2017 Build Progress Bar</Name>
-    <Description>Display a Progress Bar inside a Tool window in Visual Studio.</Description>
-    <TemplateID>LigerShark.Extensibility.BuildProgressBar.CSharp</TemplateID>
-    <DefaultName>SccProvider</DefaultName>
-    
+    <Name>VS2017 Customize Tooltip</Name>
+    <Description>Adjust the appearance of Completion Tooltips in Visual Studio.</Description>
+    <TemplateID>LigerShark.Extensibility.CustomizeTooltip.CSharp</TemplateID>
+    <DefaultName>CustomizeTooltip</DefaultName>
     <Icon>project-icon.png</Icon>
-    
     <ProjectType>CSharp</ProjectType>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <SortOrder>5000</SortOrder>
@@ -16,12 +14,12 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
   </TemplateData>
   <TemplateContent>
-    <ProjectCollection/>
+    <ProjectCollection />
     <CustomParameters>
-      <CustomParameter Name = "$language$" Value="CSharp" />
-      <CustomParameter Name = "$uistyle$" Value="none"/>
-      <CustomParameter Name = "$groupid$" Value="LigerShark.Extensibility.BuildProgressBar" />
-      <CustomParameter Name = "SideWaffleNewProjNode" Value="CSharp\Extensibility\Samples"/>
+      <CustomParameter Name="$language$" Value="CSharp" />
+      <CustomParameter Name="$uistyle$" Value="none" />
+      <CustomParameter Name="$groupid$" Value="LigerShark.Extensibility.BuildProgressBar" />
+      <CustomParameter Name="SideWaffleNewProjNode" Value="CSharp\Extensibility\Samples" />
     </CustomParameters>
   </TemplateContent>
   <WizardExtension>
