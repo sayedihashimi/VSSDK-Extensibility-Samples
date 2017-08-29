@@ -1,6 +1,4 @@
 {
-  // TODO: Add a replacement for EditorwithToolbox.Microsoft Corporation.
-  // TODO: Do the guids in EditorWithToolbox.vsdir need to be updated?
   "author": "Sayed Ibrahim Hashimi",
   "classifications": [
     "VS2017 Extensibility"
@@ -17,9 +15,7 @@
   "shortName": "exteditorwithtoolbox",
   "sourceName": "EditorWithToolbox",
   "guids": [
-    // Project ID: - CS\EditorWithToolbox.csproj
     " {A96C6F84-A591-4AA4-92AD-F1FA4955C835}",
-    // vsixmanifest ID - CS\source.extension.vsixmanifest
     "EditorwithToolbox.Microsoft Corporation.B8BA92FE-2BE2-4EC3-A913-1A2EC3277756"
   ],
   "primaryOutputs": [

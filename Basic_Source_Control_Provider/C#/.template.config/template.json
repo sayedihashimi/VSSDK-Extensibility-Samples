@@ -12,7 +12,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extscc",
+  "shortName": "extsccprovider",
   "sourceName": "BasicSccProvider",
   "guids": [
     "{9A40F019-E5A2-4CF3-B706-2D39F29C0672}",

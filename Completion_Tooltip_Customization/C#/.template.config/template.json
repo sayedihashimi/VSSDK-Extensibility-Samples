@@ -12,7 +12,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "exttooltip",
+  "shortName": "extcustomizetooltip",
   "sourceName": "CompletionTooltipCustomization",
   "guids": [
     " {9368384A-E9A4-47D5-89B5-EC1535D96EB6}",

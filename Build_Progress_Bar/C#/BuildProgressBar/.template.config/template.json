@@ -12,7 +12,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extbuildprogress",
+  "shortName": "extbuildprogressbar",
   "sourceName": "BuildProgressBar",
   "guids": [
     "{99F961A3-47A3-4C13-B206-B2437D8F199A}",

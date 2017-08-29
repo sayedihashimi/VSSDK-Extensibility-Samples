@@ -12,7 +12,7 @@
     "language": "C#",
     "type": "project"
   },
-  "shortName": "extcaret",
+  "shortName": "extdiffclassifier",
   "sourceName": "DiffClassifier",
   "guids": [
     " {E7EFCC71-C81A-4D8B-B0B8-037441A5FFA3}",
