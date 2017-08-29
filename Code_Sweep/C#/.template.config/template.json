@@ -1,4 +1,5 @@
 {
+  // TODO: Add replacement for Microsoft.Samples.VisualStudio.CodeSweep
   "author": "Sayed Ibrahim Hashimi",
   "classifications": ["VS2017 Extensibility"],
   "description": "Sweep a solution looking for any words that match search terms in an XML Schema. Display any matches on the Task List in Visual Studio.",
@@ -24,7 +25,16 @@
     // vsixmanifest ID - C#\VsPackage\source.extension.vsixmanifest
     "4c04f4d5-57ad-4d92-a80c-4785d7c87061"
   ],
-  // TODO: Add replacement for 'Microsoft.Samples.VisualStudio.CodeSweep' for projectName
+  "symbols": {
+    "pkgreplace": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": {
+        "value": "..\\..\\packages\\"
+      },
+      "replaces": "packages\\"
+    }
+  },
   "primaryOutputs": [
     {
       "path": "BuildTask\\BuildTask.csproj"

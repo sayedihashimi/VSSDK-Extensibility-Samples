@@ -124,11 +124,20 @@ function UpdateVsTemplateFiles{
         try{
             foreach($tf in $templateFiles ){
                 $dir = split-path -path $tf -Parent
+                # fix the json file itself first
+                $tempjson = ([Newtonsoft.Json.Linq.JObject]::Parse([System.IO.File]::ReadAllText($tf)))
+                $tempjson.identity.value='LigerShark.Extensibility.{0}.CSharp' -f ($tempjson.defaultName.value)
+                $tempjson.groupIdentity.Value='LigerShark.Extensibility.{0}' -f ($tempjson.defaultName.value)
+                $tempjson.ToString() | Out-File -FilePath $tf -Encoding ascii
+
                 [string[]]$vstemplate = (get-childitem -path $dir *.vstemplate|select-object -ExpandProperty fullname)
                 if($vstemplate -ne $null -and ($vstemplate.count -eq 1)){
+
+
+
                     # $tempxml=([xml]get-content -path $vstemplate[0])
                     $tempxml = ([xml](get-content $vstemplate))
-                    $tempjson = ([Newtonsoft.Json.Linq.JObject]::Parse([System.IO.File]::ReadAllText($tf)))
+                    
                     $defaultName = $tempjson.defaultName.value
 
                     $tempxml.VSTemplate.TemplateData.Description = $tempjson.description.value
@@ -136,7 +145,7 @@ function UpdateVsTemplateFiles{
                     $identity = ("LigerShark.Extensibility.{0}.CSharp" -f $defaultName)
                     $groupId = ("LigerShark.Extensibility.{0}" -f $defaultName)
 
-                    $tempxml.VSTemplate.TemplateContent.CustomParameters.CustomParameter[2] = $groupId
+                    $tempxml.VSTemplate.TemplateContent.CustomParameters.CustomParameter[2].value = $groupId
                     $tempxml.VSTemplate.TemplateData.TemplateID = $identity
                     $tempxml.VSTemplate.TemplateData.DefaultName = $tempjson.defaultName.value
                     $tempxml.Save($vstemplate)
@@ -310,7 +319,7 @@ function LoadFileReplacer{
 
 Load-NewtonsoftJson
 LoadFileReplacer
-GetGuidsToReplace
-UpdateVsTemplateFiles
+#GetGuidsToReplace
+#UpdateVsTemplateFiles
 
 

@@ -4,14 +4,14 @@
   "description": "Provides the basic requirements to implement a Source Control Provider in Visual Studio 2017.",
   "name": "VS2017 Basic SCC Provider",
   "defaultName": "SccProvider",
-  "identity": "LigerShark.Extensibility.BasicSccProvider.CSharp",
-  "groupIdentity": "LigerShark.Extensibility.BasicSccProvider",
+  "identity": "LigerShark.Extensibility.SccProvider.CSharp",
+  "groupIdentity": "LigerShark.Extensibility.SccProvider",
   "tags": {
     "language": "C#",
     "type": "project"
   },
   "shortName": "extscc",
-  "sourceName": "BasicSccProvider",
+  "sourceName": "SccProvider",
   "guids": [
     // Project ID
     "{9A40F019-E5A2-4CF3-B706-2D39F29C0672}",

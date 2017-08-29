@@ -18,7 +18,7 @@
     <CustomParameters>
       <CustomParameter Name="$language$" Value="CSharp" />
       <CustomParameter Name="$uistyle$" Value="none" />
-      <CustomParameter Name="$groupid$" Value="LigerShark.Extensibility.BuildProgressBar" />
+      <CustomParameter Name="$groupid$" Value="LigerShark.Extensibility.CustomizeTooltip" />
       <CustomParameter Name="SideWaffleNewProjNode" Value="CSharp\Extensibility\Samples" />
     </CustomParameters>
   </TemplateContent>
