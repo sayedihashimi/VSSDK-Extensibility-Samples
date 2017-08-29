@@ -3,7 +3,7 @@
   "classifications": ["VS2017 Extensibility"],
   "description": "Demonstrate how to implement the Line Transformation API in Visual Studio.",
   "name": "VS2017 Caret Fish Eye",
-  "defaultName": "SccProvider",
+  "defaultName": "CaretFishEye",
   "identity": "LigerShark.Extensibility.BasicSccProvider.CSharp",
   "groupIdentity": "LigerShark.Extensibility.BasicSccProvider",
   "tags": {
