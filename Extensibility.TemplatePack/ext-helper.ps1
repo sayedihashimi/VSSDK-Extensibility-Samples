@@ -132,6 +132,7 @@ function UpdateVsTemplateFiles{
                     $defaultName = $tempjson.defaultName.value
 
                     $tempxml.VSTemplate.TemplateData.Description = $tempjson.description.value
+                    $vsname = $tempjson.name.value.Replace('VS2017 ','')
                     $tempxml.VSTemplate.TemplateData.Name = $tempjson.name.value
                     $identity = ("LigerShark.Extensibility.{0}.CSharp" -f $defaultName)
                     $groupId = ("LigerShark.Extensibility.{0}" -f $defaultName)
@@ -150,7 +151,6 @@ function UpdateVsTemplateFiles{
             "Unable to process tf:[$tf] vstemplate:[$vstemplate]" | Write-Warning
             Write-Warning $_
         }
-        Set-Location $dir
     }
 }
 function GetGuidsToReplace{

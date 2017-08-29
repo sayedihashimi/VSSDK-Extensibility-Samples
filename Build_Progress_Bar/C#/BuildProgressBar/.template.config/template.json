@@ -18,16 +18,6 @@
     // vsixmanifest ID - C#\BuildProgressBar\source.extension.vsixmanifest
     "5155577e-bdb8-40af-ac6b-fd16439ebddb"
   ],
-  "symbols": {
-    "pkgreplace": {
-      "type": "generated",
-      "generator": "constant",
-      "parameters": {
-        "value": "..\\packages\\"
-      },
-      "replaces": "packages\\"
-    }
-  },
   "primaryOutputs": [
     {
       "path": "BuildProgressBar.csproj"

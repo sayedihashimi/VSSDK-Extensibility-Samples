@@ -18,16 +18,6 @@
     // vsixmanifest ID - C#\source.extension.vsixmanifest
     "40d9f297-25fb-4264-99ed-7785f8331c94"
   ],
-  "symbols": {
-    "pkgreplace": {
-      "type": "generated",
-      "generator": "constant",
-      "parameters": {
-        "value": "..\\packages\\"
-      },
-      "replaces": "packages\\"
-    }
-  },
   "primaryOutputs": [
     {
       "path": "CommandTargetRGB.csproj"

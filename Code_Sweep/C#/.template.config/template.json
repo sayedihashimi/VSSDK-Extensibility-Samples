@@ -24,17 +24,7 @@
     // vsixmanifest ID - C#\VsPackage\source.extension.vsixmanifest
     "4c04f4d5-57ad-4d92-a80c-4785d7c87061"
   ],
-  "symbols": {
-    "pkgreplace": {
-      "type": "generated",
-      "generator": "constant",
-      "parameters": {
-        "value": "..\\packages\\"
-      },
-      "replaces": "packages\\"
-    }
-    // TODO: Add replacement for 'Microsoft.Samples.VisualStudio.CodeSweep' for projectName
-  },
+  // TODO: Add replacement for 'Microsoft.Samples.VisualStudio.CodeSweep' for projectName
   "primaryOutputs": [
     {
       "path": "BuildTask\\BuildTask.csproj"
